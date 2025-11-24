@@ -139,7 +139,6 @@
         </div>
 
         <aside class="preview-card">
-          <!-- Replace the image files in /images/ with your own artworks. -->
           <div class="preview"><img src="images/art1.jpg" alt="Featured artwork"></div>
           <div class="meta">
             <div>
@@ -160,14 +159,14 @@
       <div class="about-grid">
         <div>
           <h3>About Marc</h3>
-          <p class="lead">My digital artwork focuses on portraits and immersive studies, using warm colors and to bring characters and stories to life.</p>
+          <p class="lead">My digital artwork focuses on portraits and immersive studies, using warm colors to bring characters and stories to life.</p>
           <div class="about-card">
             <p style="margin:0 0 8px">Hi, I’m Marc Louise, a digital artist based in Sto. Niño Norte, Arevalo, Iloilo City, Philippines. I specialize in digital sketches, paintings, and character designs. My work explores warm color palettes, textures, and intimate storytelling, aiming to bring emotions and moments to life through my art.
 
 I create my artwork using Ibis Paint and PicsArt for editing, and I’m always exploring new techniques to refine my style. Commissions and collaborations are welcome, both locally and remotely.</p>
             <ul style="margin:12px 0 0 18px;color:var(--muted)">
               <li>Specialties: digital painting, character design, color studies</li>
-              <li>Tools: Ibispaint, Picsart, Flipaclip</li>
+              <li>Tools: Ibis Paint, PicsArt, FlipaClip</li>
               <li>Available for commissions & collaborations</li>
             </ul>
           </div>
@@ -177,8 +176,8 @@ I create my artwork using Ibis Paint and PicsArt for editing, and I’m always e
           <h3>Quick Info</h3>
           <div style="background:#fff;padding:16px;border-radius:12px">
             <p style="margin:0 0 8px"><strong>Location</strong><br><span style="color:var(--muted)">Sto. Niño Norte, Arevalo, Iloilo City, Philippines (remote commissions welcome)</span></p>
-            <p style="margin:0 0 8px"><strong>Studio</strong><br><span style="color:var(--muted)">Digital — Tablet - Canvas & paper</span></p>
-            <p style="margin:0"><strong>Contact</strong><br><span style="color:var(--muted)">hello@marc-studio.example — replace with your email</span></p>
+            <p style="margin:0 0 8px"><strong>Studio</strong><br><span style="color:var(--muted)">Digital — Tablet, Canvas & Paper</span></p>
+            <p style="margin:0"><strong>Contact</strong><br><span style="color:var(--muted)">hello@marc-studio.example</span></p>
           </div>
         </div>
       </div>
@@ -193,9 +192,6 @@ I create my artwork using Ibis Paint and PicsArt for editing, and I’m always e
         <div class="skill">Sketching</div>
         <div class="skill">Animation</div>
         <div class="skill">Character Design</div>
-        
-        
-        
       </div>
     </section>
 
@@ -205,15 +201,13 @@ I create my artwork using Ibis Paint and PicsArt for editing, and I’m always e
       <p class="lead">Click any image to open it larger. Replace the images in the <code>/images/</code> folder with your artwork files (jpg/png).</p>
 
       <div class="gallery-grid" id="gallery">
-        <!-- Duplicate the art-card block for each artwork. Replace src with your image filenames. -->
-        <div class="art-card" data-full="images/art1-large.jpg"><img src="images/art1.jpg" alt="Art 1"><div class="art-caption">Autumn Study — 2025</div></div>
+        <div class="art-card" data-full="images/art1-large.jpg"><img src="images/art1.jpg" alt="Art 1"><div class="art-caption">Sorcerer Children — 2023</div></div>
         <div class="art-card" data-full="images/art2-large.jpg"><img src="images/art2.jpg" alt="Art 2"><div class="art-caption">Sketch — Portrait</div></div>
         <div class="art-card" data-full="images/art3-large.jpg"><img src="images/art3.jpg" alt="Art 3"><div class="art-caption">Warm Afternoon</div></div>
         <div class="art-card" data-full="images/art4-large.jpg"><img src="images/art4.jpg" alt="Art 4"><div class="art-caption">Study: Hands</div></div>
         <div class="art-card" data-full="images/art5-large.jpg"><img src="images/art5.jpg" alt="Art 5"><div class="art-caption">Portrait Study</div></div>
         <div class="art-card" data-full="images/art6-large.jpg"><img src="images/art6.jpg" alt="Art 6"><div class="art-caption">Evening Scene</div></div>
       </div>
-
     </section>
 
     <!-- CONTACT -->
@@ -224,19 +218,23 @@ I create my artwork using Ibis Paint and PicsArt for editing, and I’m always e
       <div class="contact-grid">
         <div>
           <form class="form" action="mailto:hello@marc-studio.example" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <input type="text" name="subject" placeholder="Subject">
-            <textarea name="message" rows="6" placeholder="Message"></textarea>
+            <input type="text" name="name" placeholder="Your Name" autocomplete="name" required>
+            <input type="email" name="email" placeholder="Your Email" autocomplete="email" required>
+            <input type="text" name="subject" placeholder="Subject" autocomplete="organization-title">
+            <textarea name="message" rows="6" placeholder="Message" autocomplete="off"></textarea>
             <button type="submit">Send message</button>
           </form>
-          <p style="font-size:13px;color:var(--muted);margin-top:8px">Tip: replace the <code>mailto:</code> address in the form action with your real email or connect with a backend form provider (Formspree, Getform) for a professional inbox.</p>
+          <p style="font-size:13px;color:var(--muted);margin-top:8px">
+            Tip: Make sure your email app is set up, or connect with a backend form service (Formspree, Getform) for professional submissions and better autofill support.
+          </p>
         </div>
 
         <aside>
           <div style="background:var(--beige);padding:18px;border-radius:12px">
             <h4 style="margin:0 0 10px">Work with me</h4>
-            <p style="color:var(--muted);margin:0 0 10px">Commissions open — I offer custom portraits, character pieces, and study batches. Reply with your project details and reference images.</p>
+            <p style="color:var(--muted);margin:0 0 10px">
+              Commissions open — I offer custom portraits, character pieces, and study batches. Reply with your project details and reference images.
+            </p>
             <div style="font-size:13px;color:var(--muted)"><strong>Rates:</strong> Available on request</div>
           </div>
         </aside>
@@ -251,7 +249,9 @@ I create my artwork using Ibis Paint and PicsArt for editing, and I’m always e
   </div>
 
   <footer>
-    <div class="container">© <strong>Marc's Art Studio</strong> — All artwork © Marc. <div style="margin-top:6px;color:var(--muted);font-size:13px">Built with care • Replace placeholder images in /images/ before publishing</div></div>
+    <div class="container">© <strong>Marc's Art Studio</strong> — All artwork © Marc. 
+      <div style="margin-top:6px;color:var(--muted);font-size:13px">Built with care • Replace placeholder images in /images/ before publishing</div>
+    </div>
   </footer>
 
   <script>
@@ -283,29 +283,11 @@ I create my artwork using Ibis Paint and PicsArt for editing, and I’m always e
     document.addEventListener('keydown', e => { if(e.key === 'Escape'){ lightbox.classList.remove('show'); lightbox.setAttribute('aria-hidden','true'); lbImg.src = ''; } });
   </script>
 
-  <!--
-    HOW TO USE / DEPLOY (short notes):
-
-    1) Replace the placeholder images:
-       - Create a folder named `images/` next to this index.html
-       - Add your artwork files named art1.jpg, art2.jpg ... and optional large versions art1-large.jpg etc.
-       - Edit captions inside each .art-card if you want different titles/dates.
-
-    2) Customize text (About, contact email) directly in the HTML.
-
-    3) To publish on GitHub Pages:
-       - Create a new GitHub repository (for example `marc-art`)
-       - Add this file as `index.html` and push the `images/` folder
-       - In the repo Settings -> Pages -> Choose branch `main` and folder `/(root)` then Save.
-       - Your site will be live at `https://<your-github-username>.github.io/<repo-name>/` within a minute or two.
-
-    4) Pro tips:
-       - Use web-optimized images (max width 2000px, JPEG 70-80% quality) to keep site fast.
-       - Connect a custom domain later via GitHub Pages settings.
-       - For an advanced portfolio, consider using a CMS (Netlify CMS, Forestry) or a static site generator like Eleventy.
-  -->
 </body>
 </html>
+
+
+
 
 
 
